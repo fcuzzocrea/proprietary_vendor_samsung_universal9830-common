@@ -110,31 +110,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     vulkan.mali \
-    libfloatingfeature \
     libsecnativefeature \
     libsecril-client.exynos990 \
-    audio.primary.exynos990 \
-    sound_trigger.primary.exynos990 \
-    vendor.samsung.hardware.audio@1.0-impl \
-    libSamsungPostProcessConvertor \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_soundaliveresampler \
-    libaboxpcmdump \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudioparamupdate \
-    libaudioproxy \
-    libdatamod \
-    liblastaboxmsg \
     libprofileparamstorage \
     libsecaudiocoreutils \
-    libsecaudioinfo \
-    libspatializerparamstorage \
     libwvhidl \
-    libaudioeffectoffload \
-    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
-    libaudioroute.exynos990 \
-    libtinyalsa.exynos990 \
     android.hardware.secure_element-impl-gto \
     android.hardware.gnss@2.1-impl \
     gatekeeper.exynos990 \
@@ -169,6 +149,7 @@ PRODUCT_PACKAGES += \
     libexynoscamera_fakefusion_plugin \
     libexynoscamera_plugin \
     libexynoscamera_plugin_utils \
+    libfloatingfeature \
     libgf_in_system_lib \
     libgraphgen_ann_import \
     libgraphgen_ann_nnc \
