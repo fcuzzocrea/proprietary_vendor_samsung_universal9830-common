@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     libtinyalsa.exynos990 \
     android.hardware.secure_element-impl-gto \
     android.hardware.gnss@2.1-impl \
+    flp.default \
     gatekeeper.exynos990 \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
