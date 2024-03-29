@@ -110,8 +110,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     vulkan.mali \
+    libSamsungPostProcessConvertor \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_soundaliveresampler \
+    libaudioparamupdate \
     libsecnativefeature \
     libsecril-client.exynos990 \
+    libaudioroute.exynos990 \
+    libtinyalsa.exynos990 \
     libprofileparamstorage \
     libsecaudiocoreutils \
     libspatializerparamstorage \

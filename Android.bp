@@ -50,6 +50,86 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libSamsungPostProcessConvertor",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libSamsungPostProcessConvertor.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libSamsungPostProcessConvertor.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "lib_SoundAlive_SRC384_ver320",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/lib_SoundAlive_SRC384_ver320.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "lib_soundaliveresampler",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/lib_soundaliveresampler.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/lib_soundaliveresampler.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libaudioparamupdate",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libaudioparamupdate.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libaudioparamupdate.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsecnativefeature",
 	owner: "samsung",
 	strip: {
@@ -86,6 +166,50 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libaudioroute.exynos990",
+	stem: "libaudioroute",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vndk/libaudioroute.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vndk/libaudioroute.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "vndk",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libtinyalsa.exynos990",
+	stem: "libtinyalsa",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vndk/libtinyalsa.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vndk/libtinyalsa.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "vndk",
 	prefer: true,
 	soc_specific: true,
 }
