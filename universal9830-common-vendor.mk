@@ -113,11 +113,8 @@ PRODUCT_PACKAGES += \
     libSamsungPostProcessConvertor \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
-    libaudioparamupdate \
     libsecnativefeature \
     libsecril-client.exynos990 \
-    libaudioroute.exynos990 \
-    libtinyalsa.exynos990 \
     libprofileparamstorage \
     libsecaudiocoreutils \
     libspatializerparamstorage \
