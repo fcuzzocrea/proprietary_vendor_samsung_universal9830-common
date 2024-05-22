@@ -230,7 +230,8 @@ PRODUCT_PACKAGES += \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
     tzdaemon \
     tzts_daemon \
-    vaultkeeperd
+    vaultkeeperd \
+    vendor.samsung.hardware.security.proca@2.0-service
 
 PRODUCT_PACKAGES += \
     libGLES_mali_libOpenCL_symlink32 \

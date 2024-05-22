@@ -1944,6 +1944,14 @@ sh_binary {
 	soc_specific: true,
 }
 
+sh_binary {
+	name: "vendor.samsung.hardware.security.proca@2.0-service",
+	owner: "samsung",
+	src: "proprietary/vendor/bin/vendor.samsung.hardware.security.proca@2.0-service",
+	filename: "vendor.samsung.hardware.security.proca@2.0-service",
+	soc_specific: true,
+}
+
 install_symlink {
 	name: "libGLES_mali_libOpenCL_symlink32",
 	soc_specific: true,
