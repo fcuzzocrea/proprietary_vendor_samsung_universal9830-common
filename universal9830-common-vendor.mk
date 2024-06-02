@@ -92,14 +92,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
-    vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-53454d655345:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-53454d655345 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-5354494d4552:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5354494d4552 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-64756c444152:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-64756c444152 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
-    vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6d73745f5441 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/driver/00000000-0000-0000-0000-494363447256:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-494363447256 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-4d53546d7374 \
@@ -210,8 +208,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
     vendor.samsung_slsi.hardware.eden_runtime@1.0 \
-    HotwordEnrollmentOKGoogleEx3CORTEXM4 \
-    HotwordEnrollmentXGoogleEx3CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.samsung.hardware.radio.exclude.slsi \
