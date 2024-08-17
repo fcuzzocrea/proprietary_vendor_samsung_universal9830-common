@@ -195,7 +195,6 @@ PRODUCT_PACKAGES += \
     libvpl \
     sensors.flicker \
     sensors.grip \
-    sensors.sensorhub \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.radio-V1-ndk \
