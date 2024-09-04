@@ -1739,6 +1739,19 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "EuiccService",
+	owner: "samsung",
+	apk: "proprietary/product/priv-app/EuiccService/EuiccService.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
 dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "samsung",
@@ -1782,132 +1795,267 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "cass",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/cass",
-	filename: "cass",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/cass"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "cbd",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/cbd",
-	filename: "cbd",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/cbd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "android.hardware.drm@1.3-service.widevine",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine",
-	filename: "android.hardware.drm@1.3-service.widevine",
-	sub_dir: "hw",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "android.hardware.keymaster@4.0_strongbox-service",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/android.hardware.keymaster@4.0_strongbox-service",
-	filename: "android.hardware.keymaster@4.0_strongbox-service",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.keymaster@4.0_strongbox-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "android.hardware.neuralnetworks@1.3-service.eden-drv",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv",
-	filename: "android.hardware.neuralnetworks@1.3-service.eden-drv",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "android.hardware.secure_element@1.2-service",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service",
-	filename: "android.hardware.secure_element@1.2-service",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "gpsd",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/gpsd",
-	filename: "gpsd",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/gpsd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "lhd",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/lhd",
-	filename: "lhd",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/lhd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "rild",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/rild",
-	filename: "rild",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/rild"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vendor.samsung.hardware.gnss@2.1-service",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service",
-	filename: "vendor.samsung.hardware.gnss@2.1-service",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vendor.samsung_slsi.hardware.eden_runtime@1.0-service",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service",
-	filename: "vendor.samsung_slsi.hardware.eden_runtime@1.0-service",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "tzdaemon",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/tzdaemon",
-	filename: "tzdaemon",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/tzdaemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "tzts_daemon",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/tzts_daemon",
-	filename: "tzts_daemon",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/tzts_daemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vaultkeeperd",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/vaultkeeperd",
-	filename: "vaultkeeperd",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/vaultkeeperd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vendor.samsung.hardware.security.proca@2.0-service",
 	owner: "samsung",
-	src: "proprietary/vendor/bin/vendor.samsung.hardware.security.proca@2.0-service",
-	filename: "vendor.samsung.hardware.security.proca@2.0-service",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/vendor.samsung.hardware.security.proca@2.0-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
