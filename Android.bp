@@ -1740,9 +1740,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "EuiccService",
+	name: "EuiccGoogle",
 	owner: "samsung",
-	apk: "proprietary/product/priv-app/EuiccService/EuiccService.apk",
+	apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
